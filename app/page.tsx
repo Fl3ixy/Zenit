@@ -63,7 +63,7 @@ export default function SecurityCheck() {
 
         {isVerified && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <div className="bg-green-500 text-white p-8 rounded-lg shadow-2xl animate-bounce">
+            <div className="bg-blue-500 text-white p-8 rounded-lg shadow-2xl animate-bounce">
               <h2 className="text-2xl font-bold">Verification Successful!</h2>
               <p>Redirecting to main page...</p>
             </div>

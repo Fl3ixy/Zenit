@@ -39,7 +39,7 @@ export default function Footer() {
             <Link href="/contact" className="text-white/70 hover:text-white transition-colors">Contact</Link>
           </div>
           <div className="mt-8 md:mt-0 flex gap-4">
-            <Link href="#" className="text-white/70 hover:text-white transition-colors" aria-label="Email">
+            <Link href="mailto:ZenithSuports@protonmail.com" className="text-white/70 hover:text-white transition-colors" aria-label="Email">
               <Mail className="h-5 w-5" />
             </Link>
             <button
@@ -50,7 +50,7 @@ export default function Footer() {
               <Share2 className="h-5 w-5" />
             </button>
 
-            <Link href="#" className="text-white/70 hover:text-white transition-colors" aria-label="Games">
+            <Link href="/contact" className="text-white/70 hover:text-white transition-colors" aria-label="Games">
               <User className="h-5 w-5" />
             </Link>
           </div>

@@ -45,15 +45,9 @@ const SORT_OPTIONS = {
 type SortOption = (typeof SORT_OPTIONS)[keyof typeof SORT_OPTIONS];
 
 const API_CATEGORIES = [
-  "gaming",
-  "cyberpunk",
-  "neon",
-  "portrait",
-  "anime",
-  "abstract",
-  "tech",
-  "dark",
-  "minimal",
+  "picture",
+  "nature",
+  "zenith",
 ];
 
 export default function Home() {

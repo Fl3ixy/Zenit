@@ -16,7 +16,7 @@ export default function Header() {
   const Logo = ({ className = "" }) => (
     <li className={`flex items-center justify-between w-full ${className}`}>
       <div className="flex items-center">
-        <Link href={"/"}>
+        <Link href={"/home"}>
           <Image
             src="/pictures/icon/Zenith.ico"
             width={50}
@@ -82,7 +82,7 @@ export default function Header() {
             <div className="hidden lg:flex w-full items-center justify-end gap-20">
               <div className="flex gap-4 justify-end w-full">
                 <Link
-                  href="/"
+                  href="/home"
                   className="text-white duration-200 font-medium ease-out hover:-translate-y-2"
                 >
                   Home

@@ -27,7 +27,7 @@ export default function Home() {
     {
       name: "Email",
       icon: Mail,
-      link: "mailto:your@email.com",
+      link: "mailto:ZenithSuports@protonmail.com",
       color: "hover:text-red-500",
     },
   ];
@@ -105,7 +105,7 @@ export default function Home() {
                   }}
                 >
                   <Bitcoin className="h-5 w-5 animate-bounce duration-1000" />
-                  <span>Donate Crypto</span>
+                  <span>Donate Crypto - Soon...</span>
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
