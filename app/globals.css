@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+.gradient-border {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+  backdrop-filter: blur(10px);
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.grid-background {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: -25px -25px;
+}
+
+.hover-card {
+  transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.dialog-content {
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.image-upload {
+  transition: all 0.3s ease;
+}
+
+.image-upload:hover {
+  opacity: 0.8;
+}
+
+.tag-input {
+  transition: all 0.2s ease;
+}
+
+.tag-input:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.badge-delete {
+  transition: all 0.2s ease;
+}
+
+.badge-delete:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
